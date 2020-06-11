@@ -1,0 +1,249 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	width: 100%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.conteiner {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 20px;
+}
+.header__logo {
+	max-width: 191px;
+}
+.benefits {
+	max-width: 100%;
+	min-height: 100vh;
+	background: url('../img/benefits_bg.png');
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 256px;
+	/*	-webkit-clip-path: polygon(0 77%, 100% 100%, 100% 0, 0 0);
+    clip-path: polygon(0 77%, 100% 100%, 100% 0, 0 0);*/
+}
+.header__menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	list-style: none;
+}
+.list__item {
+	transition: .5s;
+	border-radius: 19px;
+}
+.list__item a,
+.wrap_link a {
+	display: inline-block;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 37px;
+}
+.wrap_link a {
+	margin: 15px auto 0;
+	font-size: 19px;
+	padding: 20px 35px;
+	border-radius: 21px;
+	background-color: #f62646;
+	font-weight: bold;
+}
+.wrap_link a:hover {
+	color: #f62646;
+	background-color: #fff;
+	transition: .3s;
+}
+.wrap_link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 80px;
+}
+.list__item:hover {
+	background-color: #f62646;
+	background-image: linear-gradient(to right, #ba2617 0%, #ff1b37 100%);
+}
+.header {
+	background: #070707;
+	padding-top: 15px;
+}
+.header .conteiner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.burger {
+	display: block;
+	position: relative;
+	width: 19px;
+	height: 19px;
+	transition: 1s;
+}
+.burger:after,
+.burger:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	transition: 1s;
+}
+.burger:after {
+	top: 0;
+}
+.burger:before {
+	bottom: 0;
+}
+.line {
+	position: absolute;
+	display: block;
+	width: 26px;
+	height: 3px;
+	top: 8px;
+	left: -7px;
+	background-color: #fff;
+}
+.burger.active:before {
+	transform: rotate(45deg);
+	bottom: 10px;
+}
+.burger.active:after {
+	transform: rotate(-45deg);
+	top: 6px;
+}
+.active .line {
+	transition: 1s;
+	display: none;
+}
+.wrap__benefits {
+	display: flex;
+	flex-direction: row;
+}
+.benefits__left,
+.benefits__right {
+	flex-basis: 50%;
+}
+.wrap__benefits {
+	padding-top: 40px;
+}
+.sc-title {
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	/*font-size: 50px;*/
+	font-size: calc(8px + 26 * (100vw / 1220));
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.benefits__text {
+	color: #ffffff;
+	/*font-size: 20px;*/
+	font-size: calc(14px + 7 * (100vw / 1220));
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 15px 0;
+}
+.wrap__social {
+	display: flex;
+	justify-content: flex-end;
+}
+.wrap__social i {
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background-color: #e41f2a;
+	border-radius: 50%;
+	margin-right: 12px;
+	font-size: 34px;
+}
+.benefits__right-img {
+	padding-left: 80px;
+}
+.wr-burger {
+	display: none;
+}
+.equipment {
+	background: url('../img/2-layers.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	top: -260px;
+	z-index: -1;
+	min-height: 120vh;
+	padding-top: 260px;
+}
+.descr {
+	color: #ffffff;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.equipment .conteiner {
+	display: flex;
+	flex-direction: row;
+}
+.descr span {
+	display: block;
+	font-weight: bold;
+}
+@media(max-width: 767px) {
+	.equipment .conteiner {
+		flex-direction: column;
+	}
+	.equipment {
+		top: -366px;
+	}
+	.header__menu {
+		padding-top: 30px;
+		flex-direction: column;
+	}
+	.wr-burger {
+		display: block;
+	}
+	.sc-title {
+		font-size: calc(23px + (26 + 26 * 0.7) * ((100vw - 320px) / 1220));
+	}
+	.benefits__text {
+		font-size: calc(14px + (7 + 7 * 0.7) * ((100vw - 320px) / 1220));
+	}
+	.wrap__benefits {
+		flex-direction: column;
+	}
+	.wrap_link {
+		flex-direction: column;
+	}
+	.navigation {
+		position: absolute;
+		top: -100vh;
+		width: 100vw;
+		height: 100vh;
+		background-color: #0a1324;
+		z-index: 2;
+		transition: 1s;
+		left: 0;
+	}
+	.navigation.active {
+		position: fixed;
+		top: 56px;
+		left: 0;
+	}
+}
