@@ -5,13 +5,15 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
 	<title>Cosmos</title>
+	<!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
+	<header class="header">
 			<div class="conteiner">
 				<div class="header__logo">
 					<a href="#">
@@ -24,23 +26,23 @@
 				</div>
 				<nav class="navigation">
 					<ul class="header__menu">
-						<li class="list__item"><a href="#">Забронировать</a>
+						<li class="list__item"><a data-value="benefits" href="reservation.html">Забронировать</a>
 						</li>
-						<li class="list__item"><a href="#">оборудование</a>
+						<li class="list__item"><a data-value="equipment" href="#equipment">оборудование</a>
 						</li>
-						<li class="list__item"><a href="#">игры</a>
+						<li class="list__item"><a data-value="equipment2" href="#equipment2">игры</a>
 						</li>
-						<li class="list__item"><a href="#">контакты</a>
+						<li class="list__item"><a data-value="contacts" href="#contacts">контакты</a>
 						</li>
-						<li class="list__item"><a href="#">правила клуба</a>
+						<li class="list__item"><a href="header.html">правила клуба</a>
 						</li>
-						<li class="list__item"><a href="#">новости</a>
+						<li class="list__item"><a data-value="news" href="#news">новости</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<section class="benefits">
+		<section class="benefits" id="benefits">
 			<div class="conteiner">
 				<div class="wrap__benefits">
 					<div class="benefits__left">
@@ -52,22 +54,23 @@
 						<p class="benefits__text">Киберспортивная атмосфера для уверенных побед каждый день</p>
 						<p class="benefits__text">Мощное игровое оборудование позволит с наслаждением погрузиться в мир виртуальных игр</p>
 						<p class="benefits__text">15 компьютеров с отменным железом, комфортные профессиональные кресла и большой выбор игр на любой вкус — все это вы найдете в нашем Игровом центре!</p>
-						<div class="wrap_link">	<a href="#" class="#">Забронировать место</a>
-							<a href="#" class="#">позвонить</a>
+						<div class="wrap_link">	<a href="reservation.html">Забронировать место</a>
+							<a href="tel:+375(29)657-49-85">позвонить</a>
 						</div>
 					</div>
 					<div class="benefits__right">
 						<div class="benefits__right-img">
 							<img src="img/btn-img.png" alt="">
 						</div>
-						<div class="wrap__social">	<i class="fab fa-instagram"></i>
-							<i class="fab fa-vk"></i>
+						<div class="wrap__social"><a href="https://www.instagram.com/cosmos.ck/"><i class="fab fa-instagram"></i></a>
+							<a href="https://vk.com/cosmos_brest"><i class="fab fa-vk"></i></a>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="equipment">
+		<section class="equipment" id="equipment">
 			<div class="conteiner">
 				<div class="equipment__img">
 					<img src="img/equipment-bg.png" alt="">
@@ -88,9 +91,153 @@
 				</div>
 			</div>
 		</section>
+
+	<section class="equipment2" id="equipment2">
+	<div class="conteiner">
+		<div class="equipment__img">
+			<img src="img/equipment2-game.png" alt="">
+		</div>
+		<div class="equipment__text">
+			<h2 class="sc-title">Playstation 4 Pro оснащенная 4K телевизором</h2>
+			<p class="equipment2__descr">ufc 3, fifa 2020, mortal kombat 11 spider man, gran turismo, fortnite и многое другое!</p>
+		</div>
+
+
+
 	</div>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	</section>
+
+	<section class="equipment3">
+	<div class="conteiner">
+
+				<div class="equipment__text">
+			<h2 class="sc-title">ИГРЫ НА
+ЛЮБОЙ ВКУС</h2>
+			<p class="equipment2__descr">актуальные киберспортивные дисциплины: Overwatch; Dota2
+Hearthstone; CS:GO; Apex Legends; PUBG League of Legends; Fortnite и многие другие</p>
+		</div>
+		<div class="equipment__img">
+			<img src="img/equipment2-game-2.png" alt="">
+		</div>
+
+
+
+	</div>
+</section>
+
+	<section class="contacts" id="contacts">
+		<div class="conteiner">
+			<div class="wrap__map">
+				<div class="show-map">
+					<img src="img/map.png" alt="">
+				</div>
+
+
+
+
+
+
+				<div class="modal-my" id="modal">
+			<div class="modal-dialog-my" id="applyForm" data-course="FrontEnd">
+				<a class="close-my" id="closeModal">&#10006;</a>
+				<iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.212275207599!2d23.759970115791624!3d52.09406817973576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210e9cdc378099%3A0x1442d50628a39fd7!2z0YPQu9C40YbQsCDQnNC-0YHQutC-0LLRgdC60LDRjyAyNjcvMiwg0JHRgNC10YHRgiwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sru!4v1593427170870!5m2!1suk!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+			</div>
+			
+
+
+
+
+
+
+
+
+
+
+			</div>
+			<div class="wrap__content">
+				<h2 class="contact__title">наши контакты</h2>
+				<p class="info info-t">Режим работы 10:00-00:00
+					<br>
+  <p class="info-sub">(Возможен ночной сеанс)</p></p>
+
+				<p class="info info-t">наш адрес:</p>
+				<p class="info"><i class="fas fa-map-marker-alt">  </i> г. брест, Московская 267/2</p>
+				<p class="info info-t">Телефоны для бронирования: </p>
+				<p><a href="tel:+375(33)903-903-6">+375(33)903-903-6</a><a href="tel:+375(29)657-49-85">+375(29)657-49-85</a></p>
+				<p class="info info-t">Контент и розыгрыши тут:</p>
+				<p><a href="https://www.instagram.com/cosmos.ck/"><i class="fab fa-instagram"></i>cosmos.ck</a><a href="https://vk.com/cosmos_brest"><i class="fab fa-vk"></i>cosmos_brest</a></p>
+			</div>
+		</div>
+	</section>
+	
+<section class="sliders" id="news">
+	<div class="conteiner">
+		<div class="wrap__slider slider single-item2">
+				<div class="item__slider">
+					<img src="img/slider/1.png" alt="">
+					<h2 class="slider__title">мы открылись!</h2>
+					<h3 class="slider__subtitle">следите за новостями!</h3>
+				</div>
+					<div class="item__slider">
+
+						<img src="img/slider/1.png" alt="">
+						<h2 class="slider__title">мы открылись!2</h2>
+					<h3 class="slider__subtitle">следите за новостями!</h3>
+					</div> 
+					<div class="item__slider">
+					<img src="img/slider/1.png" alt="">
+					<h2 class="slider__title">мы открылись!3</h2>
+					<h3 class="slider__subtitle">следите за новостями!</h3>
+				</div>
+					<div class="item__slider">
+					<img src="img/slider/1.png" alt="">
+					<h2 class="slider__title">мы открылись!4</h2>
+					<h3 class="slider__subtitle">следите за новостями!</h3>
+				</div>
+					<div class="item__slider">
+					<img src="img/slider/1.png" alt="">
+					<h2 class="slider__title">мы открылись!5</h2>
+					<h3 class="slider__subtitle">следите за новостями!</h3>
+				</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+	<div class="icon-f">
+		<img src="img/icon/visa.png" alt="">
+	</div>
+	<div class="icon-f">
+		<img src="img/icon/visa2.png" alt="">
+</div>
+		<div class="icon-f">
+		<img src="img/icon/ms.png" alt="">
+</div>
+		<div class="icon-f">
+		<img src="img/icon/ms2.png" alt="">
+	</div>
+</footer>
+
+
+
+
+
+
+
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
+
 	<script src="https://kit.fontawesome.com/b7d68cc061.js" crossorigin="anonymous"></script>
 </body>
 
