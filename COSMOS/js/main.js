@@ -4,7 +4,10 @@ $("body").on('click', '[href*="#"]', function(e){
   e.preventDefault();
 });
 $(document).ready(function(){
-
+$('.list__item').click(function(){
+$('.navigation').removeClass('active');
+}
+	);
 
 
 

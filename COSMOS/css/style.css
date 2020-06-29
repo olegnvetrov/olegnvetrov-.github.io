@@ -724,9 +724,12 @@ td, th{
 
 
 @media(max-width: 767px) {
-	.sliders{
-		/*min-height: 100vh;*/
-	}
+	.regulations__description .conteiner{
+	flex-direction: column;
+}
+.regulations .conteiner{
+	flex-direction: column;
+}
 	.reservation .conteiner {
 		padding: 0 15px;
 	}
