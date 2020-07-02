@@ -10,7 +10,7 @@ img {
 	width: 100%;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
 	background-color: #0b0b0b;
 }
 .conteiner {
@@ -52,7 +52,7 @@ body {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 12px;
-	font-weight: 400;
+	font-weight: 600;
 	text-transform: uppercase;
 	line-height: 37px;
 }
@@ -62,7 +62,7 @@ body {
 	padding: 20px 35px;
 	border-radius: 21px;
 	background-color: #f62646;
-	font-weight: bold;
+
 }
 .wrap_link a:hover {
 	color: #f62646;
@@ -151,16 +151,18 @@ body {
 .sc-title {
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
+
 	/*font-size: 50px;*/
+
 	font-size: calc(8px + 26 * (100vw / 1220));
-	font-weight: 800;
+	font-weight: 900;
 	text-transform: uppercase;
 }
 .benefits__text {
 	color: #ffffff;
 	/*font-size: 20px;*/
 	font-size: calc(14px + 7 * (100vw / 1220));
-	font-weight: 400;
+	font-weight: 600;
 	text-transform: uppercase;
 	padding: 15px 0;
 }
@@ -203,6 +205,7 @@ body {
 	font-weight: bold;
 	line-height: 36px;
 	text-transform: uppercase;
+	font-weight: 600;
 }
 .equipment .conteiner {
 	display: flex;
@@ -210,7 +213,7 @@ body {
 }
 .descr span {
 	display: block;
-	font-weight: bold;
+	font-weight: 800;
 }
 .equipment2{
 	background: url('../img/equipment2.png') no-repeat;
@@ -232,7 +235,8 @@ body {
 .equipment2__descr{
 	padding-top: 30px;
 color: #ffffff;
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
+
 font-size: 24px;
 font-weight: 700;
 line-height: 39.65px;
@@ -279,7 +283,7 @@ color: #ffffff;
 font-family: "Montserrat";
 	font-size: calc(26px + 7 * (100vw / 1220));
 /*font-size: 66px;*/
-font-weight: bold;
+font-weight: 900;
 text-transform: uppercase;
 }
 .info{
@@ -297,7 +301,7 @@ text-transform: uppercase;
 	padding-top: 44px;
 }
 .info-sub{
-font-family: "Montserrat Medium";
+font-family: "Montserrat";
 font-size: 18px;
 font-weight: 500;
 color: #fff;
@@ -442,6 +446,10 @@ background:url('../img/regulations_bg.png')no-repeat;
 }
 .description__right{
 	padding-bottom: 65px;
+	font-weight: 500;
+}
+.selection{
+	font-weight: 700;
 }
 .description__left{
 	padding-right: 100px;
@@ -450,7 +458,11 @@ background:url('../img/regulations_bg.png')no-repeat;
 	 font-family: "Montserrat";
 	padding-top: 40px; 
 	text-indent:35px;
+	font-weight: 500;
 
+}
+.desc-l span{
+	font-weight: 700;
 }
 footer{
 	height: 100px;
@@ -547,7 +559,14 @@ td, th{
 .place{
 	background-color: #fff;
 }
+.place tr th{
+	font-weight: 700;
 
+}
+.place tr td{
+	font-weight: 600;
+
+}
 .circle{
 	display: inline-block;
 	width: 30px;
@@ -560,6 +579,10 @@ td, th{
 }
 .circle2{
 	background-color: red;
+	
+}
+td span{
+	font-weight: 700;
 }
 .circle1{
 	background-color: #4b4b4b;}
