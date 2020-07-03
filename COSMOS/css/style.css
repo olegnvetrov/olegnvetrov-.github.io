@@ -149,6 +149,7 @@ font-family: 'Montserrat', sans-serif;
 	padding-top: 40px;
 }
 .sc-title {
+	max-wigth:520px;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 
