@@ -149,7 +149,7 @@ font-family: 'Montserrat', sans-serif;
 	padding-top: 40px;
 }
 .sc-title {
-	max-width:520px;
+	max-width: 520px;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
 
@@ -187,6 +187,9 @@ font-family: 'Montserrat', sans-serif;
 .benefits__right-img {
 	padding-left: 80px;
 }
+.benefits__right-img:hover{
+	cursor: pointer;
+}
 .wr-burger {
 	display: none;
 }
@@ -201,7 +204,6 @@ font-family: 'Montserrat', sans-serif;
 	padding-top: 260px;
 }
 .descr {
-	padding-top:20px;
 	color: #ffffff;
 	font-size: 22px;
 	font-weight: bold;
