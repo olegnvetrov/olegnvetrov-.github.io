@@ -6,6 +6,7 @@ $("body").on('click', '[href*="#"]', function(e){
 $(document).ready(function(){
 $('.list__item').click(function(){
 $('.navigation').removeClass('active');
+$('.burger').toggleClass('active');
 }
 	);
 
